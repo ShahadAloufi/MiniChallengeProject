@@ -1,0 +1,106 @@
+
+[
+    
+    {
+        "id": "D44AAEBC-BF4F-42CD-8C37-0FEF772A5B69",
+        "caseDetail": [
+            {
+                "id": "2BAD20C5-D007-4BBE-B074-8CF0F256A42F",
+                "caseNumber": 1,
+                "name": "Um Sarah",
+                "city": "Riyadh",
+                "brief": "Divorced housewife, she supports her children, they suffer from weak conditions and lack of hands.",
+                "status": 61,
+                "detailText": "A divorced and unemployed woman that supports her children alone.The family suffers from low-income and lack of hands. They need donors to secure food to them as soon as possible.",
+                "disrtict": "Al-Malaz",
+                "familyMembers": 4,
+                "phoneNumber": "0934837625428",
+            }
+        ]
+    },
+    {
+        "id": "944AB773-16CA-48F9-BB64-BB0E482FE102",
+        "caseDetail": [
+            {
+                "id": "024763B6-2577-4D04-9A4F-321F3EB19EA6",
+                "caseNumber": 2,
+                "name": "Abo Ahmed",
+                "city": "Riyadh",
+                "brief": "A single father who supports his children, they suffer from weak conditions and need immediate help.",
+                "status": 64,
+                "detailText": "A single and unemployed man that supports his children alone.The family suffers from low-income and lack of hands. They need donors to secure food to them as soon as possible.",
+                "disrtict": "Al-Rymal",
+                "familyMembers": 5,
+                "phoneNumber": "47285973403",
+            }
+        ]
+    },
+    {
+        "id": "44FBAFC0-BEE0-4A02-9C57-B8ECDC1CE5E1",
+        "caseDetail": [
+            {
+                "id": "F0B4DF27-B293-4151-8480-FA46DFCA5BBB",
+                "caseNumber": 3,
+                "name": "Abo Khalid",
+                "city": "Riyadh",
+                "brief": "An old couple who cannot support their children and suffer from weak conditions and lack of hands.",
+                "status": 62,
+                "detailText": "A old and unemployed couple who need to support their children.The family suffers from low-income and lack of hands. They need donors to secure food to them as soon as possible.",
+                "disrtict": "Al-Hamra",
+                "familyMembers": 6,
+                "phoneNumber": "4728302574394",
+            }
+        ]
+    },
+    {
+        "id": "D44AAEBC-BF4F-62CD-8C37-0FEF772A5B69",
+        "caseDetail": [
+            {
+                "id": "2AAD20C5-D007-4BBE-B074-8CF0F256A42F",
+                "caseNumber": 4,
+                "name": "Um Sarah",
+                "city": "Riyadh",
+                "brief": "Divorced housewife, she supports her children, they suffer from weak conditions and lack of hands.",
+                "status": 61,
+                "detailText": "A divorced and unemployed woman that supports her children alone.The family suffers from low-income and lack of hands. They need donors to secure food to them as soon as possible.",
+                "disrtict": "Al-Malaz",
+                "familyMembers": 4,
+                "phoneNumber": "0934837625428",
+            }
+        ]
+    },
+    {
+        "id": "944AB773-15CA-48F9-BB64-BB0E482FE102",
+        "caseDetail": [
+            {
+                "id": "025763B6-2577-4D04-9A4F-321F3EB19EA6",
+                "caseNumber": 5,
+                "name": "Abo Ahmed",
+                "city": "Riyadh",
+                "brief": "A single father who supports his children, they suffer from weak conditions and need immediate help.",
+                "status": 64,
+                "detailText": "A single and unemployed man that supports his children alone.The family suffers from low-income and lack of hands. They need donors to secure food to them as soon as possible.",
+                "disrtict": "Al-Rymal",
+                "familyMembers": 5,
+                "phoneNumber": "47285973403",
+            }
+        ]
+    },
+    {
+        "id": "44FBAFC0-BEE0-4A72-9C57-B8ECDC1CE5E1",
+        "caseDetail": [
+            {
+                "id": "F0B4DF27-B293-4151-8480-FA46DFCA9BBB",
+                "caseNumber": 6,
+                "name": "Abo Khalid",
+                "city": "Riyadh",
+                "brief": "An old couple who cannot support their children and suffer from weak conditions and lack of hands.",
+                "status": 62,
+                "detailText": "A old and unemployed couple who need to support their children.The family suffers from low-income and lack of hands. They need donors to secure food to them as soon as possible.",
+                "disrtict": "Al-Hamra",
+                "familyMembers": 6,
+                "phoneNumber": "4728302574394",
+            }
+        ]
+    }
+]

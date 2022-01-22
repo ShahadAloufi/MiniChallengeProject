@@ -11,7 +11,9 @@ import SwiftUI
 struct MiniChallenge2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+            .environment(\.sizeCategory, .extraSmall)
+            .preferredColorScheme(.dark)
         }
     }
 }
