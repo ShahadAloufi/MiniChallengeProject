@@ -26,6 +26,7 @@
 		7778C89E279BD46200FA583C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7778C89D279BD46200FA583C /* LocationManager.swift */; };
 		7778C8A0279BD47000FA583C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7778C89F279BD47000FA583C /* MapView.swift */; };
 		7778C8A2279BD47D00FA583C /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7778C8A1279BD47D00FA583C /* PlaceListView.swift */; };
+		77F207C6279C54E400F56D43 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F207C5279C54E400F56D43 /* ShareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		7778C89D279BD46200FA583C /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7778C89F279BD47000FA583C /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		7778C8A1279BD47D00FA583C /* PlaceListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
+		77F207C5279C54E400F56D43 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				7778C885279BC65000FA583C /* CaseCol.swift */,
+				77F207C5279C54E400F56D43 /* ShareView.swift */,
 				7778C891279BCA7A00FA583C /* SearchBar.swift */,
 				7778C893279BCAC300FA583C /* StatusBar.swift */,
 			);
@@ -213,6 +216,7 @@
 				7778C884279BC64900FA583C /* Cases.swift in Sources */,
 				7778C890279BC9D600FA583C /* Home.swift in Sources */,
 				7778C888279BC66A00FA583C /* CaseView.swift in Sources */,
+				77F207C6279C54E400F56D43 /* ShareView.swift in Sources */,
 				7778C88A279BC67C00FA583C /* HomeView.swift in Sources */,
 				7778C8A0279BD47000FA583C /* MapView.swift in Sources */,
 				7778C892279BCA7A00FA583C /* SearchBar.swift in Sources */,

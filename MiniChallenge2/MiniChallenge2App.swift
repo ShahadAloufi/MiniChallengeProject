@@ -13,7 +13,7 @@ struct MiniChallenge2App: App {
         WindowGroup {
             HomeView()
             .environment(\.sizeCategory, .extraSmall)
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
         }
     }
 }

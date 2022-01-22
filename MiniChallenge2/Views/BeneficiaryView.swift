@@ -18,7 +18,7 @@ struct BeneficiaryView: View {
                 VStack {
                     SearchBar(SearchText: $SearchText)
                     .padding(.bottom, 9)
-                    LazyVGrid(columns: col, spacing: 7){
+                    LazyVGrid(columns: col, spacing: 17){
                         ForEach(mycase1){ i in
                             ForEach(i.caseDetail) { mycase in
                                 NavigationLink(destination: CaseView(mycase: mycase)) {
@@ -26,8 +26,10 @@ struct BeneficiaryView: View {
                                 }
                             }
                         }
+                       
                         
                     }
+                   
                 }
                 .padding()
                 
@@ -42,7 +44,7 @@ struct BeneficiaryView: View {
 struct BeneficiaryView_Previews: PreviewProvider {
     static var previews: some View {
         BeneficiaryView()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
             .environment(\.sizeCategory, .extraSmall)
     }
 }

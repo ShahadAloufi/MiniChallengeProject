@@ -10,15 +10,18 @@ import SwiftUI
 struct CaseView: View {
     let mycase: Case
     var body: some View {
-        ScrollView {
+        VStack {
             VStack {
-                VStack(alignment: .leading) {
-                    Text("Case: \(mycase.caseNumber)")
+                HStack {
+                    Text("Case \(mycase.caseNumber)")
                         .font(.title2)
-                        .padding(.bottom, 10)
-                    Text(mycase.detailText)
+                        
+                    Spacer()
+                    ShareView()
+                    
                 }
-                
+                .padding(.bottom, 10)
+                Text(mycase.detailText)
                 
                 HStack {
                     VStack {
@@ -35,13 +38,27 @@ struct CaseView: View {
                             .frame(width: 60, height: 30)
                             .padding(.bottom, 2)
                         Text(" \(mycase.familyMembers) members")
+                        
                     }
                 }
-                .padding(.top)
-                
+                .padding()
                 StatusBar()
+            }
+            .padding()
+            
+            VStack {
+               
+                
+                Spacer()
                 
                     .padding()
+                Button("Chat with Beneficiary") {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                }
+                .frame(width: 299, height: 45)
+                .background(Color("ColorGreen"))
+                .foregroundColor(.white)
+                .cornerRadius(20)
                 Button("Call Beneficiary") {
                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                 }
@@ -52,18 +69,18 @@ struct CaseView: View {
             }
             
             
-            .foregroundColor(Color("ColorGreen"))
-            .padding()
-            .frame(width:350 ,height: 550)
-            .background(Color.white)
-            .cornerRadius(46)
-            .overlay(RoundedRectangle(cornerRadius: 46)
-                        .stroke(Color.gray, lineWidth: 1))
+            
         }
-        .navigationTitle("Case: \(mycase.caseNumber)")
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitle("Beneficiary Details")
+        .navigationBarTitleDisplayMode(.inline) 
+        .padding()
+        
+        
         
     }
+    
+    
+    
 }
 
 
@@ -75,6 +92,6 @@ struct CaseView_Previews: PreviewProvider {
     static var previews: some View {
         CaseView(mycase: Case.mycase)
             .environment(\.sizeCategory, .extraSmall)
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }

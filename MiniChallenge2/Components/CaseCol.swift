@@ -13,19 +13,27 @@ struct CaseCol: View {
         ZStack {
             Image("Whole")
                 .resizable()
-                .frame(width:330 ,height: 199)
+                .frame(width:380 ,height: 200)
                 .cornerRadius(30)
             VStack {
                    
-                VStack(alignment: .leading) {
-                    Text("Case: \(mycase.caseNumber)")
-                        .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
-                        .fontWeight(.bold)
-                        .padding(.bottom, 10)
+                VStack {
+                    HStack {
+                        Text("Case: \(mycase.caseNumber)")
+                            .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
+                            .fontWeight(.bold)
+                        
+                        Spacer(minLength: 17)
+                        ShareView()
+                         
+                        
+                    }
+                    .padding(.trailing)
+                    .padding()
                         Text(mycase.brief)
                            
                     }
-                .padding(2)
+
 
                     HStack{
                         HStack(spacing: 0){
@@ -60,7 +68,7 @@ struct CaseCol: View {
                 .padding(6)
                
                 .foregroundColor(Color("ColorGreen"))
-                .frame(width:330 ,height: 220)
+                .frame(width:370 ,height: 200)
                 .cornerRadius(20)
         }
         }

@@ -22,7 +22,7 @@ struct PlaceListView: View {
                 .gesture(TapGesture()
                     .onEnded(self.onTap)
             )
-            
+                
             List {
                 
                 ForEach(self.landmarks, id: \.id) { landmark in
@@ -33,7 +33,7 @@ struct PlaceListView: View {
                         
                         Text(landmark.title)
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                 }
                 
             }
