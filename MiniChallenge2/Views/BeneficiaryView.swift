@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BeneficiaryView: View {
     let mycase1 = Bundle.main.decodeJson([Cases].self, fileName: "cases.json")
-    let col:[GridItem] = Array(repeating: .init(.flexible(), spacing: 28), count: 1)
+    let col:[GridItem] = Array(repeating: .init(.flexible(), spacing: 8), count: 1)
     @State var SearchText = ""
     @State private var isEditing = false
     var body: some View {
@@ -18,7 +18,7 @@ struct BeneficiaryView: View {
                 VStack {
                     SearchBar(SearchText: $SearchText)
                     .padding(.bottom, 9)
-                    LazyVGrid(columns: col, spacing: 18){
+                    LazyVGrid(columns: col, spacing: 7){
                         ForEach(mycase1){ i in
                             ForEach(i.caseDetail) { mycase in
                                 NavigationLink(destination: CaseView(mycase: mycase)) {

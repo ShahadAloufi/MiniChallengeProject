@@ -13,7 +13,7 @@ struct CaseCol: View {
         ZStack {
             Image("Whole")
                 .resizable()
-                .frame(width:330 ,height: 240)
+                .frame(width:330 ,height: 199)
                 .cornerRadius(30)
             VStack {
                    
@@ -25,7 +25,7 @@ struct CaseCol: View {
                         Text(mycase.brief)
                            
                     }
-                .padding(20)
+                .padding(2)
 
                     HStack{
                         HStack(spacing: 0){
@@ -57,10 +57,10 @@ struct CaseCol: View {
                     }
                     
                 }
-                .padding()
+                .padding(6)
                
                 .foregroundColor(Color("ColorGreen"))
-                .frame(width:330 ,height: 240)
+                .frame(width:330 ,height: 220)
                 .cornerRadius(20)
         }
         }
