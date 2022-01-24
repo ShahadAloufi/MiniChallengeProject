@@ -33,8 +33,8 @@
 		77901E4A279E6D6200C9A80C /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77901E49279E6D6200C9A80C /* LandmarkList.swift */; };
 		77901E4C279E70C300C9A80C /* FoodBanksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77901E4B279E70C300C9A80C /* FoodBanksList.swift */; };
 		77901E4E279E920900C9A80C /* UrgentCaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77901E4D279E920900C9A80C /* UrgentCaseView.swift */; };
-		77901E50279E954F00C9A80C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77901E4F279E954F00C9A80C /* Home.swift */; };
 		77901E52279E958700C9A80C /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77901E51279E958700C9A80C /* Box.swift */; };
+		77901E90279EF93400C9A80C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77901E8F279EF93400C9A80C /* Home.swift */; };
 		77F207C6279C54E400F56D43 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F207C5279C54E400F56D43 /* ShareView.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,8 +66,8 @@
 		77901E49279E6D6200C9A80C /* LandmarkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		77901E4B279E70C300C9A80C /* FoodBanksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodBanksList.swift; sourceTree = "<group>"; };
 		77901E4D279E920900C9A80C /* UrgentCaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentCaseView.swift; sourceTree = "<group>"; };
-		77901E4F279E954F00C9A80C /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Home.swift; path = ../../../Home.swift; sourceTree = "<group>"; };
 		77901E51279E958700C9A80C /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		77901E8F279EF93400C9A80C /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Home.swift; path = ../../../../Downloads/Home.swift; sourceTree = "<group>"; };
 		77F207C5279C54E400F56D43 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				7778C879279BC56700FA583C /* BeneficiaryView.swift */,
-				77901E4F279E954F00C9A80C /* Home.swift */,
+				77901E8F279EF93400C9A80C /* Home.swift */,
 				7778C887279BC66A00FA583C /* CaseView.swift */,
 				7778C88B279BC8D700FA583C /* FoodBanksView.swift */,
 				7778C8A1279BD47D00FA583C /* PlaceListView.swift */,
@@ -244,6 +244,7 @@
 				77901E4E279E920900C9A80C /* UrgentCaseView.swift in Sources */,
 				7778C886279BC65000FA583C /* CaseCol.swift in Sources */,
 				7778C87A279BC56700FA583C /* BeneficiaryView.swift in Sources */,
+				77901E90279EF93400C9A80C /* Home.swift in Sources */,
 				7778C884279BC64900FA583C /* Cases.swift in Sources */,
 				77901E48279E6D5A00C9A80C /* LandmarkRow.swift in Sources */,
 				7778C888279BC66A00FA583C /* CaseView.swift in Sources */,
@@ -260,7 +261,6 @@
 				77901E44279E6D4100C9A80C /* CircleImage.swift in Sources */,
 				77901E4C279E70C300C9A80C /* FoodBanksList.swift in Sources */,
 				7778C89C279BD45B00FA583C /* LandmarkAnnotation.swift in Sources */,
-				77901E50279E954F00C9A80C /* Home.swift in Sources */,
 				7778C894279BCAC300FA583C /* StatusBar.swift in Sources */,
 				7778C89A279BD45300FA583C /* Landmark.swift in Sources */,
 			);
