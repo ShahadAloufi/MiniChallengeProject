@@ -10,7 +10,6 @@ struct Cases: Decodable, Identifiable, Equatable{
     var id: UUID
     var caseDetail: [Case]
    
-
 }
 
 struct Case: Decodable, Identifiable, Equatable{

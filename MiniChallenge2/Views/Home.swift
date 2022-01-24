@@ -8,7 +8,17 @@
 import SwiftUI
 
 struct Home: View {
+    
+    let urgentCase = Bundle.main.decodeJson([Cases].self, fileName: "cases.json")
+    
+    
     var body: some View {
+        
+        
+        
+        
+        
+        
         Text("Reem")
     }
 }
