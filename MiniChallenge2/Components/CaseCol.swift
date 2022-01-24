@@ -11,25 +11,46 @@ struct CaseCol: View {
     let mycase: Case
     var body: some View {
         ZStack {
-            Image("Whole")
+            Image("MybackG")
                 .resizable()
-                .frame(width:380 ,height: 200)
+                .frame(width:350 ,height: 210)
                 .cornerRadius(30)
             VStack {
                    
                 VStack {
                     HStack {
-                        Text("Case: \(mycase.caseNumber)")
-                            .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
+                        
+                        VStack(alignment: .leading) {
+                            Text("Case: \(mycase.caseNumber)")
+                                .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
                             .fontWeight(.bold)
+                            .padding(.bottom, 1)
+                            VStack {
+                                HStack {
+                                    Image(systemName: "mappin.and.ellipse")
+                                        .padding(.bottom, 8)
+                                    Text(mycase.city)
+                                        .font(.footnote)
+                                    .fontWeight(.regular)
+                                   
+                                }
+                                
+                            }
+                           
+                               
+                        }
                         
                         Spacer(minLength: 17)
                         ShareView()
                          
                         
                     }
+                    .padding(.bottom, 6)
+//                    Text("City: \(mycase.city)")
+//                        .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
+//                        .fontWeight(.bold)
                     .padding(.trailing)
-                    .padding()
+//                    .padding()
                         Text(mycase.brief)
                            
                     }
@@ -50,11 +71,12 @@ struct CaseCol: View {
                         .foregroundColor(Color(red: 0.9058823529411765, green: 0.16470588235294117, blue: 0.16470588235294117))
                         }
                         .cornerRadius(20)
-                        
+                        .padding(.trailing)
                         Button("Donate now") {
                             /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                         }
                         .padding(0.0)
+                        
                         .frame(width: 90, height: 28)
                         .background(Color("ColorGreen"))
                         .foregroundColor(.white)
@@ -68,7 +90,7 @@ struct CaseCol: View {
                 .padding(6)
                
                 .foregroundColor(Color("ColorGreen"))
-                .frame(width:370 ,height: 200)
+                .frame(width:340 ,height: 198)
                 .cornerRadius(20)
         }
         }
@@ -79,6 +101,6 @@ struct CaseCol_Previews: PreviewProvider {
     static var previews: some View {
         CaseCol(mycase: Case.mycase)
             .environment(\.sizeCategory, .extraSmall)
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }

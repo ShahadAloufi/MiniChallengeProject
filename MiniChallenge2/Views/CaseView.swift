@@ -59,8 +59,15 @@ struct CaseView: View {
                 .background(Color("ColorGreen"))
                 .foregroundColor(.white)
                 .cornerRadius(20)
-                Button("Call Beneficiary") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                let numberString = "111-222-3334"
+
+                Button(action: {
+                    let telephone = "tel://"
+                    let formattedString = telephone + numberString
+                    guard let url = URL(string: formattedString) else { return }
+                    UIApplication.shared.open(url)
+                   }) {
+                   Text("Call Beneficiary")
                 }
                 .frame(width: 299, height: 45)
                 .background(Color("ColorGreen"))

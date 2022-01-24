@@ -11,7 +11,10 @@ struct ShareView: View {
     var body: some View {
         Button(action: shareButton) {
             Image(systemName: "square.and.arrow.up")
+                .resizable()
+                .frame(width: 16, height: 21)
                     .foregroundColor(.black)
+                    
         }
         
     }

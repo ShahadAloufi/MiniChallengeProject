@@ -35,16 +35,20 @@ struct PlaceListView: View {
                     }
                     .foregroundColor(.black)
                 }
+                //next list
+                
+//                LandmarkList()
+                
                 
             }
             
         }.cornerRadius(10)
     }
-}
 
-struct PlaceListView_Previews: PreviewProvider {
-    static var previews: some View {
-        PlaceListView(landmarks: [Landmark(placemark: MKPlacemark())], onTap: {})
-    }
 }
+//struct PlaceListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PlaceListView(landmarks: [Landmark(placemark: MKPlacemark())], onTap: {})
+//    }
+//}
 

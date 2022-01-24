@@ -19,7 +19,7 @@ struct HomeView: View {
             BeneficiaryView()
                 .tabItem{
                     Image(systemName: "person.3")
-                    Text("Beneficiary Details")
+                    Text("Beneficiary")
                 }
             
             FoodBanksView()
@@ -27,6 +27,14 @@ struct HomeView: View {
                     Image(systemName: "building.columns.fill")
                     Text("Food Banks")
                 }
+            FoodBanksList()
+                .tabItem{
+                    Image(systemName: "building.columns.fill")
+                    Text("Food Banks List")
+                }
+            
+            
+            
         }
     }
 }
