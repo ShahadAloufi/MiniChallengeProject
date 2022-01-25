@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7723F519279FE0BE00F03B2E /* StatusBar2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7723F518279FE0BE00F03B2E /* StatusBar2.swift */; };
 		7778C86C279BC4E800FA583C /* MiniChallenge2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7778C86B279BC4E800FA583C /* MiniChallenge2App.swift */; };
 		7778C870279BC4E900FA583C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7778C86F279BC4E900FA583C /* Assets.xcassets */; };
 		7778C873279BC4E900FA583C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7778C872279BC4E900FA583C /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7723F518279FE0BE00F03B2E /* StatusBar2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar2.swift; sourceTree = "<group>"; };
 		7778C868279BC4E800FA583C /* MiniChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7778C86B279BC4E800FA583C /* MiniChallenge2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge2App.swift; sourceTree = "<group>"; };
 		7778C86F279BC4E900FA583C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				77901E49279E6D6200C9A80C /* LandmarkList.swift */,
 				7778C885279BC65000FA583C /* CaseCol.swift */,
+				7723F518279FE0BE00F03B2E /* StatusBar2.swift */,
 				77901E43279E6D4100C9A80C /* CircleImage.swift */,
 				77901E51279E958700C9A80C /* Box.swift */,
 				77F207C5279C54E400F56D43 /* ShareView.swift */,
@@ -262,6 +265,7 @@
 				77901E4C279E70C300C9A80C /* FoodBanksList.swift in Sources */,
 				7778C89C279BD45B00FA583C /* LandmarkAnnotation.swift in Sources */,
 				7778C894279BCAC300FA583C /* StatusBar.swift in Sources */,
+				7723F519279FE0BE00F03B2E /* StatusBar2.swift in Sources */,
 				7778C89A279BD45300FA583C /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

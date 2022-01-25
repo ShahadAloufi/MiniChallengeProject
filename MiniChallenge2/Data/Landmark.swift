@@ -25,6 +25,8 @@ struct Landmark {
     var title: String {
         self.placemark.title ?? ""
     }
+
+    
     
     var coordinate: CLLocationCoordinate2D {
         self.placemark.coordinate
