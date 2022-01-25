@@ -45,7 +45,7 @@ struct CaseCol: View {
                          
                         
                     }
-                    .padding(.bottom, 6)
+//                    .padding(.bottom, 6)
 //                    Text("City: \(mycase.city)")
 //                        .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
 //                        .fontWeight(.bold)
@@ -57,25 +57,31 @@ struct CaseCol: View {
 
 
                     HStack{
-                        HStack(spacing: 0){
-                        Rectangle()
-                        .frame(width: 45, height: 15)
-                        .foregroundColor(Color(red: 0.30980392156862746, green: 0.5568627450980392, blue: 0.21176470588235294))
-                                                
-                        Rectangle()
-                        .frame(width: 45, height: 15)
-                        .foregroundColor(Color(red: 0.8666666666666667, green: 0.6274509803921569, blue: 0.3176470588235294))
-                                                    
-                        Rectangle()
-                        .frame(width: 45, height: 15)
-                        .foregroundColor(Color(red: 0.9058823529411765, green: 0.16470588235294117, blue: 0.16470588235294117))
+                     
+                        
+                        if mycase.status > 80{
+                            Image(systemName:"triangle.fill")
+                                .position(x: 189, y: 60) // red
+                            .foregroundColor(.black)
+                                       
+                        }else if mycase.status >= 60 {
+                            Image(systemName:"triangle.fill")
+                            .position(x: 150, y: 60) // orange
+                            .foregroundColor(.black)
+                        }else{
+                            
+                            Image(systemName:"triangle.fill")
+                                .position(x: 105, y: 60) // green
+                            .foregroundColor(.black)
                         }
-                        .cornerRadius(20)
-                        .padding(.trailing)
+                        
+                        StatusBar2(mycase: Case.mycase)
+                        
+                        
                         Button("Donate now") {
                             /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                         }
-                        .padding(0.0)
+//                        .padding(0.0)
                         
                         .frame(width: 90, height: 28)
                         .background(Color("ColorGreen"))
@@ -104,3 +110,6 @@ struct CaseCol_Previews: PreviewProvider {
             .preferredColorScheme(.light)
     }
 }
+
+
+

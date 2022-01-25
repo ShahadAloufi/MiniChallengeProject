@@ -42,7 +42,22 @@ struct CaseView: View {
                     }
                 }
                 .padding()
-                StatusBar()
+                StatusBar(mycase: Case.mycase)
+                if mycase.status > 80{
+                    Image(systemName:"triangle.fill")
+                        .position(x: 270, y: -1) // red
+                    .foregroundColor(.black)
+                               
+                }else if mycase.status >= 60 {
+                    Image(systemName:"triangle.fill")
+                    .position(x: 185, y: -1) // orange
+                    .foregroundColor(.black)
+                }else{
+                    
+                    Image(systemName:"triangle.fill")
+                        .position(x: 105, y: 1) // green
+                    .foregroundColor(.black)
+                }
             }
             .padding()
             

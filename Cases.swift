@@ -10,7 +10,6 @@ struct Cases: Decodable, Identifiable, Equatable{
     var id: UUID
     var caseDetail: [Case]
    
-
 }
 
 struct Case: Decodable, Identifiable, Equatable{
@@ -30,3 +29,26 @@ struct Case: Decodable, Identifiable, Equatable{
     
 }
 
+//var index =
+
+
+
+
+//var mystatus1 = Case(id: UUID(), caseNumber: <#T##Int#>, name: <#T##String#>, city: <#T##String#>, brief: <#T##String#>, status: <#T##Int#>, detailText: <#T##String#>, disrtict: <#T##String#>, familyMembers: <#T##Int#>, phoneNumber: <#T##String#>)
+
+
+//if status >= 60 {
+//
+//    print("this case needs immediate help")
+//
+//
+//}else if status >= 30{
+//
+//    print("this case needs help")
+//
+//
+//}else{
+//
+//    print("this case doesnt need immdeiate help")
+//
+//}
