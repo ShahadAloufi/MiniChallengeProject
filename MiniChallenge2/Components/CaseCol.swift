@@ -59,19 +59,19 @@ struct CaseCol: View {
                     HStack{
                      
                         
-                        if mycase.status > 80{
+                        if mycase.status >= 80{
                             Image(systemName:"triangle.fill")
-                                .position(x: 189, y: 60) // red
+                                .position(x: 189, y: 64) // red
                             .foregroundColor(.black)
                                        
                         }else if mycase.status >= 60 {
                             Image(systemName:"triangle.fill")
-                            .position(x: 150, y: 60) // orange
+                            .position(x: 150, y: 64) // orange
                             .foregroundColor(.black)
                         }else{
                             
                             Image(systemName:"triangle.fill")
-                                .position(x: 105, y: 60) // green
+                                .position(x: 105, y: 64) // green
                             .foregroundColor(.black)
                         }
                         
@@ -81,7 +81,7 @@ struct CaseCol: View {
                         Button("Donate now") {
                             /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                         }
-//                        .padding(0.0)
+                        .padding(0.0)
                         
                         .frame(width: 90, height: 28)
                         .background(Color("ColorGreen"))
