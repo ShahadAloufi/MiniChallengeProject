@@ -43,8 +43,8 @@ struct Box: View {
            
             Image("box")
                 .resizable(resizingMode: .stretch)
-                    .frame(width: 143.0, height: 60)
-                    .cornerRadius(radius: 33.0, corners:[.topLeft, .topRight])
+                    .frame(width: 139.0, height: 60)
+                    .cornerRadius(radius:40, corners:[.topLeft, .topRight])
             
             HStack{
                
@@ -54,9 +54,9 @@ struct Box: View {
 
             Rectangle()
                         
-                .frame(width: 144, height: 130)
+                        .frame(width: 139.0, height: 131)
                 .foregroundColor(Color(red: 0.134, green: 0.274, blue: 0.251))
-                .cornerRadius(radius: 33.0, corners:[.bottomLeft, .bottomRight])
+                .cornerRadius(radius: 40, corners:[.bottomLeft, .bottomRight])
                     
                     
                     HStack(spacing: 0){
@@ -81,14 +81,16 @@ struct Box: View {
                   
                     ZStack{
                         Image(systemName:"triangle.fill")
-                            .padding([.leading, .bottom], 80.0)
+                            .position(x: 105, y: 27)
+                            .foregroundColor(.black)
+                        
                         
                     }
-                   
+                   Spacer()
                     VStack(alignment:.leading) {
                         
                         Text("Case: \(mycase2.caseNumber)")
-                            .padding(.top, 13.0)
+                            .position(x: 30, y: 40)
                             .frame(width:100, height:40 , alignment: .bottomLeading)
                             .font(.headline)
                             .foregroundColor(.white)
@@ -98,6 +100,7 @@ struct Box: View {
                             .frame(width:130, height:80 , alignment: .trailing)
                             .font(.caption)
                             .foregroundColor(.white)
+                            .multilineTextAlignment(.leading)
                         }
                     .padding(2)
                     

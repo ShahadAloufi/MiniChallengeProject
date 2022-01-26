@@ -32,8 +32,8 @@ extension Bundle {
   }
 }
 
-var landmarks2: [Landmark2] = load("landmarkData.json")
 
+var foodBanks: [FoodBank] = load("landmarkData.json")
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
@@ -55,3 +55,9 @@ func load<T: Decodable>(_ filename: String) -> T {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
+
+
+
+
+
+

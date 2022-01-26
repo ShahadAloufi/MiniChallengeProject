@@ -12,17 +12,22 @@ struct CaseView: View {
     var body: some View {
         VStack {
             VStack {
+                Spacer()
                 HStack {
+                    
                     Text("Case \(mycase.caseNumber)")
-                        .font(.title2)
-                        
+                        .font(.title)
+                        .foregroundColor(Color(red: 0.134, green: 0.274, blue: 0.251))
                     Spacer()
+                        
                     ShareView()
                     
                 }
                 .padding(.bottom, 10)
                 Text(mycase.detailText)
-                
+                    .foregroundColor(Color(red: 0.134, green: 0.274, blue: 0.251))
+                    .lineLimit(nil)
+          
                 HStack {
                     VStack {
                         Image(systemName: "mappin.and.ellipse")
@@ -31,7 +36,9 @@ struct CaseView: View {
                             .padding(.bottom, 2)
                         Text(mycase.disrtict)
                     }
-                    
+                    .foregroundColor(Color(red: 0.134, green: 0.274, blue: 0.251))
+                    Spacer()
+                        .frame(width: 40 )
                     VStack{
                         Image(systemName: "person.3.fill")
                             .resizable()
@@ -40,8 +47,10 @@ struct CaseView: View {
                         Text(" \(mycase.familyMembers) members")
                         
                     }
+                    .foregroundColor(Color(red: 0.134, green: 0.274, blue: 0.251))
                 }
                 .padding()
+                
                 StatusBar(mycase: Case.mycase)
                 if mycase.status > 80{
                     Image(systemName:"triangle.fill")
@@ -58,43 +67,64 @@ struct CaseView: View {
                         .position(x: 105, y: 1) // green
                     .foregroundColor(.black)
                 }
+                
+                VStack {
+                   
+                
+                    
+//                    Button("Chat with Beneficiary") {
+//                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+//                    }
+                    
+                    NavigationLink( destination: ContentView()){
+                               Text("Chat with Beneficiary")
+                    }
+                    
+                    .frame(width: 299, height: 45)
+                    .background(Color("ColorGreen"))
+                    .foregroundColor(.white)
+                    .cornerRadius(20)
+                    let numberString = "111-222-3334"
+
+                    Button(action: {
+                        let telephone = "tel://"
+                        let formattedString = telephone + numberString
+                        guard let url = URL(string: formattedString) else { return }
+                        UIApplication.shared.open(url)
+                       }) {
+                       Text("Call Beneficiary")
+                           
+                    }
+                    
+                    
+                    .frame(width: 299, height: 45)
+                    .background(Color("ColorGreen"))
+                    .foregroundColor(.white)
+                    .cornerRadius(20)
+                    
+                    
+                    NavigationLink( destination: Done()){
+                               Text("Donate Confirmation")
+                    }
+                    
+                    
+                    .frame(width: 200, height: 45)
+                    .background(Color("ColorGreen"))
+                    .foregroundColor(.white)
+                    .cornerRadius(20)
+                }
+                .position(x: 160)
             }
+            
             .padding()
             
-            VStack {
-               
-                
-                Spacer()
-                
-                    .padding()
-                Button("Chat with Beneficiary") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-                .frame(width: 299, height: 45)
-                .background(Color("ColorGreen"))
-                .foregroundColor(.white)
-                .cornerRadius(20)
-                let numberString = "111-222-3334"
-
-                Button(action: {
-                    let telephone = "tel://"
-                    let formattedString = telephone + numberString
-                    guard let url = URL(string: formattedString) else { return }
-                    UIApplication.shared.open(url)
-                   }) {
-                   Text("Call Beneficiary")
-                }
-                .frame(width: 299, height: 45)
-                .background(Color("ColorGreen"))
-                .foregroundColor(.white)
-                .cornerRadius(20)
-            }
+    
             
             
             
         }
         .navigationBarTitle("Beneficiary Details")
-        .navigationBarTitleDisplayMode(.inline) 
+        .navigationBarTitleDisplayMode(.inline)
         .padding()
         
         

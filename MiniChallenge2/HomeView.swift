@@ -27,9 +27,9 @@ struct HomeView: View {
                     Image(systemName: "building.columns.fill")
                     Text("Food Banks")
                 }
-            FoodBanksList()
+            FoodBankList()
                 .tabItem{
-                    Image(systemName: "building.columns.fill")
+                    Image(systemName: "list.bullet")
                     Text("Food Banks List")
                 }
             
