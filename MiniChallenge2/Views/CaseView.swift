@@ -71,10 +71,7 @@ struct CaseView: View {
                 VStack {
                    
                 
-                    
-//                    Button("Chat with Beneficiary") {
-//                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-//                    }
+               
                     
                     NavigationLink( destination: ContentView()){
                                Text("Chat with Beneficiary")
@@ -84,11 +81,11 @@ struct CaseView: View {
                     .background(Color("ColorGreen"))
                     .foregroundColor(.white)
                     .cornerRadius(20)
-                    let numberString = "111-222-3334"
+                 
 
                     Button(action: {
                         let telephone = "tel://"
-                        let formattedString = telephone + numberString
+                        let formattedString = telephone + mycase.phoneNumber
                         guard let url = URL(string: formattedString) else { return }
                         UIApplication.shared.open(url)
                        }) {
@@ -103,8 +100,8 @@ struct CaseView: View {
                     .cornerRadius(20)
                     
                     
-                    NavigationLink( destination: Done()){
-                               Text("Donate Confirmation")
+                    NavigationLink( destination: DoneView()){
+                               Text("Conform Donation")
                     }
                     
                     
@@ -113,12 +110,17 @@ struct CaseView: View {
                     .foregroundColor(.white)
                     .cornerRadius(20)
                 }
-                .position(x: 160)
+                
             }
             
             .padding()
             
-    
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
             
             
             

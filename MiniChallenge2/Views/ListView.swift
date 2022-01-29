@@ -43,10 +43,9 @@ struct ListView: View {
             Spacer()
             Spacer()
             Spacer()
-            let numberString = "111-222-3334"
             Button(action: {
                 let telephone = "tel://"
-                let formattedString = telephone + numberString
+                let formattedString = telephone + example.phoneNumber
                 guard let url = URL(string: formattedString) else { return }
                 UIApplication.shared.open(url)
                }) {

@@ -18,10 +18,13 @@ struct FoodBankMapView: View {
     
    
     var body: some View {
-        Map(coordinateRegion: $region, annotationItems: annotations) {_ in
-            MapPin(coordinate: example.location.locationCoordinate())
-    }
-        .frame(width: 400, height: 300)
+        VStack {
+            Map(coordinateRegion: $region, annotationItems: annotations) {_ in
+                MapPin(coordinate: example.location.locationCoordinate())
+        }
+            .cornerRadius(23)
+            .frame(width: 400, height: 300)
+        }
         
 
     }

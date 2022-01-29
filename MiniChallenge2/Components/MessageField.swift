@@ -13,7 +13,7 @@ struct MessageField: View {
     var body: some View {
         HStack {
             CustomTextFiled(placeholder: Text("Enter your message here"), text: $message)
-
+            
             Button {
                 messagesManager.sendMessage(text: message)
                 message = ""
@@ -44,7 +44,7 @@ struct CustomTextFiled: View {
     @Binding var text: String //Binding means that we can pass the varible from one view to another and modify that varible outside that view
     var editingChanged: (Bool) -> () = {_ in}
     var commit: () -> () = {}
-
+    
     var body: some View {
         ZStack(alignment: .leading) {
             if text.isEmpty {

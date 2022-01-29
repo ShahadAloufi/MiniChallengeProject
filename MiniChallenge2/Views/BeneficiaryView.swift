@@ -19,7 +19,7 @@ struct BeneficiaryView: View {
                     SearchBar(SearchText: $SearchText)
                     .padding(.bottom, 9)
                     LazyVGrid(columns: col, spacing: 17){
-                        ForEach(mycase1){ i in
+                        ForEach(mycase1.filter({"\($0)".contains(SearchText) || SearchText.isEmpty   })){ i in
                             ForEach(i.caseDetail) { mycase in
                                 NavigationLink(destination: CaseView(mycase: mycase)) {
                                     CaseCol(mycase: mycase)
