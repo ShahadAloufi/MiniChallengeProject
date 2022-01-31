@@ -2,81 +2,72 @@
     {
         "name": "Ikram",
         "category": "Food Bank",
-        "city": "Riyadh",
-        "state": "Saudi Arabia",
-        "id": 1001,
-        "isFeatured": true,
-        "isFavorite": true,
-        "park": "Makkah al-Mukarramah",
-        "coordinates": {
-            "longitude": 21.48169084546552,
-            "latitude": 39.94688693241866
+        "city": "Makkah al-Mukarramah",
+        "country": "Saudi Arabia",
+        "id": "D44AAEBC-BF4F-42CD-8C37-0FEF772A5B77",
+        "location": {
+            "longitude": 39.9468926459148,
+            "latitude": 21.481683485600932
+            
         },
         "description": "Ikram organization for Food Preservation in Makkah was established on 9/4/1438 AH under License No. (1024) with the aim of preserving surplus food from banquets, wedding palaces and towers surrounding the Holy Mosque, transporting, preserving and rehabilitating it in a safe and healthy manner, and then distribute it to the poor, orphans and widows in Makkah.",
-        "imageName": "Ikram"
+        "imageName": "Ikram",
+        "phoneNumber": "0551322203"
     },
     {
         "name": "Ettam",
         "category": "Food Bank",
         "city": "Riyadh",
-        "state": "Saudi Arabia",
-        "id": 1002,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Riyadh",
-        "coordinates": {
-            "longitude": 23.8859,
-            "latitude": 45.0792
+        "country": "Saudi Arabia",
+        "id": "944AB773-16CA-48F9-BB64-BB0E482FE122",
+        "location": {
+            "longitude": 46.59370539430937,
+            "latitude": 24.59605944464944
         },
         "description": "Ettam is an organization that collects quality meals with the help of regular employees and volunteers, and delivers them to beneficiaries recommended by charities in the utmost of privacy. Etaam won the award for the best charitable organization in the Arab world for the year 2019 (Best Arabs) presented by the Global Awards Festival in Marrakesh, Morocco.",
-        "imageName": "Ettam"
+        "imageName": "Ettam",
+        "phoneNumber": "920008110"
     },
     {
         "name": "Bashayer Al-Khair",
         "category": "Food Bank",
-        "city": "Riyadh",
-        "state": "Saudi Arabia",
-        "id": 1003,
-        "isFeatured": false,
-        "isFavorite": true,
-        "park": "Kharj",
-        "coordinates": {
-            "longitude": 23.8859,
-            "latitude": 45.0792
+        "city": "Al-Kharj",
+        "country": "Saudi Arabia",
+        "id": "E0B4DF27-B293-4151-8480-FA46DFCA6BBB",
+        "location": {
+            "longitude": 47.35056870900714,
+            "latitude": 24.130957047336764
         },
         "description": "Bashayer Al-Khair is a charitable organization in Al-Kharj that was established with the aim of preserving surplus food from banquets, wedding palaces and towers surrounding the Holy Mosque, transporting, preserving and rehabilitating it in a safe and healthy manner, and then distribute it to the poor, orphans and widows in Al-Kharj.",
-        "imageName": "Bashayer"
+        "imageName": "Bashayer",
+        "phoneNumber": "0599033011"
     },
     {
         "name": "Niim",
-        "category": "Lakes",
-        "city": "Browning",
-        "state": "Saudi Arabia",
-        "id": 1004,
-        "isFeatured": true,
-        "isFavorite": true,
-        "park": "Aflaj",
-        "coordinates": {
-            "longitude": 23.8859,
-            "latitude": 45.0792
+        "category": "Food Bank",
+        "city": "Unaizah",
+        "country": "Saudi Arabia",
+        "id": "44FBAFC0-BAA0-4A72-9C57-B8ECDC1CE5E2",
+        "location": {
+            "longitude": 44.006558738497006,
+            "latitude": 26.10293952226921
         },
         "description": "Niim is a non-profit charitable organization specializing in food, clothing and furniture, whose primary goal is to preserve blessings.",
-        "imageName": "Niim"
+        "imageName": "Niim",
+        "phoneNumber": "0554247770"
     },
     {
         "name": "Riyadh Food Bank",
-        "category": "Lakes",
-        "city": "Twin Lakes",
-        "state": "Saudi Arabia",
-        "id": 1005,
-        "isFeatured": false,
-        "isFavorite": false,
-        "park": "Riyadh",
-        "coordinates": {
-            "longitude": 23.8859,
-            "latitude": 45.0792
+        "category": "Food Bank",
+        "city": "Riyadh",
+        "country": "Saudi Arabia",
+        "id":"944AB773-15CA-48F9-BB64-B00E482FE102",
+        "location": {
+            "longitude": 46.77834743093944,
+            "latitude": 24.751191071085287
         },
         "description": "Riyadh Food Bank is a non-profit charitable organization that was established in 1436 H, under the supervision of the Ministry of Human Resources and Social Development to collect surplus specializing in food, clothing and furniture, whose primary goal is to preserve blessings.",
-        "imageName": "RiyadhFoodBank"
+        "imageName": "RiyadhFoodBank",
+        "phoneNumber": "0114009528"
     }
 ]
